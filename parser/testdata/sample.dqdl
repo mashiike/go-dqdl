@@ -1,0 +1,16 @@
+# this file is sample DQDL ruleset
+#   define multiple rulesets
+
+# 1st ruleset for "order-id" column
+Rules = [
+	IsComplete "order-id",
+	IsUnique "order-id"
+]
+
+# 2nd ruleset for "load-date" column
+Rules = [
+	IsComplete "load-date",
+    DataFreshness "load-date" <= 24 hours
+]
+
+# see more details: https://docs.aws.amazon.com/glue/latest/dg/dqdl.html

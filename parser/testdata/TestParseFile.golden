@@ -1,0 +1,231 @@
+{
+  "Filename": "testdata/sample.dqdl",
+  "CommentGroups": [
+    [
+      {
+        "SharpPos": {
+          "Index": 0,
+          "Line": 1,
+          "Column": 1
+        },
+        "Text": "# this file is sample DQDL ruleset"
+      },
+      {
+        "SharpPos": {
+          "Index": 35,
+          "Line": 2,
+          "Column": 1
+        },
+        "Text": "#   define multiple rulesets"
+      }
+    ]
+  ],
+  "Rulesets": [
+    {
+      "Description": [
+        {
+          "SharpPos": {
+            "Index": 65,
+            "Line": 4,
+            "Column": 1
+          },
+          "Text": "# 1st ruleset for \"order-id\" column"
+        }
+      ],
+      "DeclPos": {
+        "Index": 101,
+        "Line": 5,
+        "Column": 1
+      },
+      "LeftBracketPos": {
+        "Index": 109,
+        "Line": 5,
+        "Column": 9
+      },
+      "Rules": [
+        {
+          "Description": null,
+          "Type": {
+            "NamePos": {
+              "Index": 112,
+              "Line": 6,
+              "Column": 2
+            },
+            "Name": "IsComplete",
+            "Comments": null
+          },
+          "Parameters": [
+            {
+              "LeftQuotePos": {
+                "Index": 123,
+                "Line": 6,
+                "Column": 13
+              },
+              "RightQuotePos": {
+                "Index": 132,
+                "Line": 6,
+                "Column": 22
+              },
+              "Value": "order-id",
+              "Comments": null
+            }
+          ],
+          "Expression": null,
+          "Comments": null
+        },
+        {
+          "Description": null,
+          "Type": {
+            "NamePos": {
+              "Index": 136,
+              "Line": 7,
+              "Column": 2
+            },
+            "Name": "IsUnique",
+            "Comments": null
+          },
+          "Parameters": [
+            {
+              "LeftQuotePos": {
+                "Index": 145,
+                "Line": 7,
+                "Column": 11
+              },
+              "RightQuotePos": {
+                "Index": 154,
+                "Line": 7,
+                "Column": 20
+              },
+              "Value": "order-id",
+              "Comments": null
+            }
+          ],
+          "Expression": null,
+          "Comments": null
+        }
+      ],
+      "InnerComments": null,
+      "RightBracketPos": {
+        "Index": 156,
+        "Line": 8,
+        "Column": 1
+      },
+      "Comments": null
+    },
+    {
+      "Description": [
+        {
+          "SharpPos": {
+            "Index": 159,
+            "Line": 10,
+            "Column": 1
+          },
+          "Text": "# 2nd ruleset for \"load-date\" column"
+        }
+      ],
+      "DeclPos": {
+        "Index": 196,
+        "Line": 11,
+        "Column": 1
+      },
+      "LeftBracketPos": {
+        "Index": 204,
+        "Line": 11,
+        "Column": 9
+      },
+      "Rules": [
+        {
+          "Description": null,
+          "Type": {
+            "NamePos": {
+              "Index": 207,
+              "Line": 12,
+              "Column": 2
+            },
+            "Name": "IsComplete",
+            "Comments": null
+          },
+          "Parameters": [
+            {
+              "LeftQuotePos": {
+                "Index": 218,
+                "Line": 12,
+                "Column": 13
+              },
+              "RightQuotePos": {
+                "Index": 228,
+                "Line": 12,
+                "Column": 23
+              },
+              "Value": "load-date",
+              "Comments": null
+            }
+          ],
+          "Expression": null,
+          "Comments": null
+        },
+        {
+          "Description": null,
+          "Type": {
+            "NamePos": {
+              "Index": 235,
+              "Line": 13,
+              "Column": 5
+            },
+            "Name": "DataFreshness",
+            "Comments": null
+          },
+          "Parameters": [
+            {
+              "LeftQuotePos": {
+                "Index": 249,
+                "Line": 13,
+                "Column": 19
+              },
+              "RightQuotePos": {
+                "Index": 259,
+                "Line": 13,
+                "Column": 29
+              },
+              "Value": "load-date",
+              "Comments": null
+            }
+          ],
+          "Expression": {
+            "ExprPos": {
+              "Index": 261,
+              "Line": 13,
+              "Column": 31
+            },
+            "Operator": "\u003c=",
+            "Right": {
+              "NumberPos": {
+                "Index": 264,
+                "Line": 13,
+                "Column": 34
+              },
+              "UnitPos": {
+                "Index": 267,
+                "Line": 13,
+                "Column": 37
+              },
+              "Value": "24 hours",
+              "Number": "24",
+              "Unit": "hours",
+              "Comments": null
+            },
+            "Comments": null
+          },
+          "Comments": null
+        }
+      ],
+      "InnerComments": null,
+      "RightBracketPos": {
+        "Index": 273,
+        "Line": 14,
+        "Column": 1
+      },
+      "Comments": null
+    }
+  ]
+}
